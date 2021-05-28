@@ -1,0 +1,20 @@
+name: clean_architecture
+description: Flutter clean architure base components.
+version: 0.0.1
+homepage: clean architecture
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  equatable: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
