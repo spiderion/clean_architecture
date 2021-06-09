@@ -1,3 +1,5 @@
+import 'package:clean_architecture/error/error.dart';
+
 class RequestBehaviour<Request, Response> {
   final Request? requestData;
   final Function(Response? responseData)? onSuccess;
