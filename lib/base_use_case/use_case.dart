@@ -20,11 +20,11 @@ abstract class RxUseCase<T extends BaseRepository?> {
 
   RxUseCase(this.repository);
 
-  Future<void> get(RequestObserver observer) async {
+  Future<void> get<RQ, RP>(RequestObserver<RQ, RP> observer) async {
     throw UnimplementedError('method must be implemented before use');
   }
 
-  Future<void> set(RequestObserver observer) async {
+  Future<void> set<RQ, RP>(RequestObserver<RQ, RP> observer) async {
     throw UnimplementedError('method must be implemented before use');
   }
 }
