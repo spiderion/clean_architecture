@@ -1,3 +1,3 @@
-## 0.0.1
+## 0.0.2
 
- Base components for the clean architecture
+ Export main classes into one library

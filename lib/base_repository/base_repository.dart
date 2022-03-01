@@ -1,5 +1,5 @@
 import '../configuration/remote_configuration.dart';
-import '../exception_captor/excepion_captor.dart';
+import '../exception_captor/exception_captor.dart';
 
 /// The role of the repository is to convert the exception in manageable errors,
 /// and provide info about remote Data or Status
