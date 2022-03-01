@@ -6,7 +6,7 @@ import 'package:clean_architecture/base_repository/base_repository.dart';
 /// The useCase mainly is in charge of managing the EBR objects
 /// returns [BusinessError] when request is not correct
 /// has reference to a repository
-abstract class UseCase<ResultModel, RequestModel, T extends BaseRepository?> {
+abstract class UseCase<T extends BaseRepository?> {
   final T repository;
 
   UseCase(this.repository);
