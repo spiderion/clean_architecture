@@ -1,5 +1,4 @@
-import '../configuration/remote_configuration.dart';
-import '../exception_captor/exception_captor.dart';
+import 'package:clean_architecture_components/clean_architecture.dart';
 
 /// The role of the repository is to convert the exception in manageable errors,
 /// and provide info about remote Data or Status
@@ -15,7 +14,7 @@ abstract class BaseRepository {
   }
 
   @deprecated
-  Future<dynamic?> executeDefaultRemoteOperation(Function function, {bool? shouldCheckConnection}) async {
+  Future<ResultModel?> executeDefaultRemoteOperation(Function function, {bool? shouldCheckConnection}) async {
     return exceptionCaptor?.execute(function);
   }
 }
