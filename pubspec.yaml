@@ -1,7 +1,7 @@
 name: clean_architecture
 description: Flutter clean architure base components.
 version: 0.0.1
-homepage: clean architecture
+homepage: https://github.com/spiderion/clean_architecture
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
