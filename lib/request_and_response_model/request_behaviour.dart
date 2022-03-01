@@ -1,5 +1,3 @@
-import 'package:clean_architecture/error/error.dart';
-
 class RequestObserver<Request, Response> {
   final Request? requestData;
   final Function(Response? responseData)? onListen;
