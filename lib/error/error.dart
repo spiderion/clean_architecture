@@ -1,8 +1,9 @@
+import 'package:clean_architecture/request_and_response_model/result_model.dart';
 import 'package:equatable/equatable.dart';
 
 ///This is the final error returned from the [UseCase] which will be
 ///handled by an [ErrorStateResolver]
-abstract class Error extends Equatable {
+abstract class Error extends Equatable implements ResultModel {
   final String? message;
   final String? code;
 
@@ -41,12 +42,14 @@ class PermissionError extends Error {
 }
 
 class FirstTimePermissionError extends Error {
-  FirstTimePermissionError({String message = "PERMISSION_TO_USE_THIS_FEATURE_ARE_NOT_GRANTED", String? code})
+  FirstTimePermissionError(
+      {String message = "PERMISSION_TO_USE_THIS_FEATURE_ARE_NOT_GRANTED", String? code})
       : super(message: message, code: code);
 }
 
 class CaseNotFoundError extends Error {
-  CaseNotFoundError({String message = "DEVELOPER_ERROR", String? code}) : super(message: message, code: code);
+  CaseNotFoundError({String message = "DEVELOPER_ERROR", String? code})
+      : super(message: message, code: code);
 }
 
 class UnimplementedError extends Error {
