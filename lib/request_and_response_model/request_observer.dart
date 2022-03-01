@@ -1,3 +1,5 @@
+import 'package:clean_architecture_components/clean_architecture.dart';
+
 class RequestObserver<Request, Response> {
   final Request? requestData;
   final Function(Response? responseData)? onListen;
