@@ -1,3 +1,7 @@
+## 0.1.0-rc.1
+
+Breaking changes
+
 ## 0.0.2
 
- Export main classes into one library
+first release

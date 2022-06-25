@@ -1,10 +1,8 @@
 import 'package:equatable/equatable.dart';
 
-import '../request_and_response_model/result_model.dart';
-
 ///This is the final error returned from the [UseCase] which will be
 ///handled by an [ErrorStateResolver]
-abstract class Error extends Equatable implements ResultModel {
+abstract class Error extends Equatable {
   final String? message;
   final String? code;
 

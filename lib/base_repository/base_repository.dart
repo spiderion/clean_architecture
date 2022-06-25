@@ -5,16 +5,10 @@ import 'package:clean_architecture_components/clean_architecture.dart';
 abstract class BaseRepository {
   ///Access only from RepositoryImpl
   final RemoteConfiguration remoteConfiguration;
-  final ExceptionCaptor? exceptionCaptor;
 
-  BaseRepository(this.remoteConfiguration, {this.exceptionCaptor});
+  BaseRepository(this.remoteConfiguration);
 
   String getStringConfig(String key) {
     return remoteConfiguration.getString(key);
-  }
-
-  @deprecated
-  Future<ResultModel?> executeDefaultRemoteOperation(Function function, {bool? shouldCheckConnection}) async {
-    return exceptionCaptor?.execute(function);
   }
 }
