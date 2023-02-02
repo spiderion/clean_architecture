@@ -8,4 +8,8 @@ abstract class RemoteConfiguration {
   int getInt(String key);
 
   Future<bool> fetchLatest();
+
+  void addListener(Function() listener);
+
+  void removeListener(Function() listener);
 }

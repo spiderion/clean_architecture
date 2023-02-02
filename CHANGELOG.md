@@ -1,3 +1,6 @@
+## 1.0.1
+add methods to remote config
+
 ## 1.0.0
 release
 

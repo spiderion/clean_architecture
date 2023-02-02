@@ -1,6 +1,6 @@
 name: clean_architecture_components
 description: Flutter clean architure base components.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/spiderion/clean_architecture
 
 environment:
